@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+header {
+  background: #6B280E;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  padding: 1rem;
+}
+.camera-section, .result-section, .history-section {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  background: black;
+}
+button {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #6B280E;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #7D3215;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background: #6B280E;
+  color: white;
+}

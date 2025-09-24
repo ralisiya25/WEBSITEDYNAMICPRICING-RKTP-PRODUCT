@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Monitoring Rendang Koro Smart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📊 Dashboard Monitoring Rendang Koro Smart</h1>
+  </header>
+
+  <main>
+    <section class="camera-section">
+      <h2>🎥 Scan Label Indikator</h2>
+      <div class="controls">
+        <label for="cameraSelect">Pilih Kamera:</label>
+        <select id="cameraSelect">
+          <option value="user">📸 Kamera Depan</option>
+          <option value="environment">📱 Kamera Belakang</option>
+        </select>
+
+        <label for="threshold">Ambang Batas Warna:</label>
+        <input type="range" id="threshold" min="0" max="100" value="30">
+        <span id="thresholdValue">30</span>
+      </div>
+
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" hidden></canvas>
+
+      <button id="scanBtn">🔍 Scan Warna</button>
+    </section>
+
+    <section class="result-section">
+      <h2>📋 Hasil Scan</h2>
+      <div id="result">Belum ada hasil</div>
+      <button id="exportBtn">💾 Export CSV</button>
+    </section>
+
+    <section class="history-section">
+      <h2>📑 Riwayat Hasil Scan</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Waktu</th>
+            <th>RGB</th>
+            <th>Kualitas</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody id="historyTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
